@@ -9,7 +9,7 @@
 
 This package is an extraction of the [Laravel's Illuminate\Support\Arr](https://github.com/laravel/framework/blob/5.5/src/Illuminate/Support/Arr.php) class, including all helpers, repackaged to be agnostic and available to any PHP project. 
 
-You can find some documentation on the available helpers here: https://laravel.com/docs/5.5/helpers#available-methods.
+You can find some documentation on the available helpers here: https://laravel.com/docs/5.5/helpers.
 
 ## Install
 
