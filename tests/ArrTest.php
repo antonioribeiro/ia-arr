@@ -7,13 +7,6 @@ use IlluminateAgnostic\Arr\Support\Arr;
 
 class ArrTest extends TestCase
 {
-    public function testCollapse()
-    {
-        $data = [['foo', 'bar'], ['baz'], 'not-array'];
-
-        $this->assertEquals(['foo', 'bar', 'baz'], Arr::collapse($data));
-    }
-
     public function testSet()
     {
         $array = ['products' => ['desk' => ['price' => 100]]];
@@ -33,11 +26,20 @@ class ArrTest extends TestCase
     public function testShuffle()
     {
         $old = $new = ['products' => ['desk' => ['price' => 100]]];
-        
-        while ($old == $new) {
+
+        $count = 0;
+
+        while ($old == $new && $count++ < 10) {
             $new = Arr::shuffle($new);
         }
         
         $this->assertNotEquals($old, $new);
+    }
+
+    public function testCollapse()
+    {
+        $data = [['foo', 'bar'], ['baz'], 'not-array'];
+
+        $this->assertEquals(['foo', 'bar', 'baz'], Arr::collapse($data));
     }
 }
