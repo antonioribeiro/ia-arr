@@ -1,5 +1,19 @@
 # IlluminateAgnostic\Arr
 
+<p align="center">
+    <a href="https://packagist.org/packages/pragmarx/ia-arr"><img alt="Latest Stable Version" src="https://img.shields.io/packagist/v/pragmarx/ia-arr.svg?style=flat-square"></a>
+    <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square"></a>
+    <a href="https://scrutinizer-ci.com/g/ia-arr/?branch=master"><img alt="Code Quality" src="https://img.shields.io/scrutinizer/g/ia-arr.svg?style=flat-square"></a>
+    <a href="https://travis-ci.org/ia-arr"><img alt="Build" src="https://img.shields.io/travis/ia-arr.svg?style=flat-square"></a>
+    <a href="https://packagist.org/packages/pragmarx/ia-arr"><img alt="Downloads" src="https://img.shields.io/packagist/dt/pragmarx/ia-arr.svg?style=flat-square"></a>
+</p>
+<p align="center">
+    <a href="https://scrutinizer-ci.com/g/ia-arr/?branch=master"><img alt="Coverage" src="https://img.shields.io/scrutinizer/coverage/g/ia-arr.svg?style=flat-square"></a>
+    <a href="https://styleci.io/repos/119604199"><img alt="StyleCI" src="https://styleci.io/repos/119604199/shield"></a>
+    <!-- <a href="https://insight.sensiolabs.com/projects/156fbef1-b03f-4fca-ba97-57874b7a35bf"><img alt="SensioLabsInsight" src="https://img.shields.io/sensiolabs/i/156fbef1-b03f-4fca-ba97-57874b7a35bf.svg?style=flat-square"></a> -->
+    <a href="https://travis-ci.org/ia-arr"><img alt="PHP" src="https://img.shields.io/badge/PHP-5.4%20--%207.2-brightgreen.svg?style=flat-square"></a>
+</p>
+
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
@@ -62,23 +76,3 @@ If you discover any security related issues, please email acr@antoniocarlosribei
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-[ico-version]: https://img.shields.io/packagist/v/pragmarx/ia-arr.svg?style=flat-square
-[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-
-[ico-travis-waiting]: https://img.shields.io/travis/antonioribeiro/ia-arr/master.svg?style=flat-square
-[ico-travis]: https://img.shields.io/badge/build-passing-green.svg?style=flat-square
-
-[ico-scrutinizer-waiting]: https://img.shields.io/scrutinizer/coverage/g/antonioribeiro/ia-arr.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/badge/coverage-92%20%25-green.svg?style=flat-square
-
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/antonioribeiro/ia-arr.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/pragmarx/ia-arr.svg?style=flat-square
-
-[link-packagist]: https://packagist.org/packages/pragmarx/ia-arr
-[link-travis]: https://travis-ci.org/antonioribeiro/ia-arr
-[link-scrutinizer]: https://scrutinizer-ci.com/g/antonioribeiro/ia-arr/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/antonioribeiro/ia-arr
-[link-downloads]: https://packagist.org/packages/pragmarx/ia-arr
-[link-author]: https://github.com/antonioribeiro
-[link-contributors]: ../../contributors
