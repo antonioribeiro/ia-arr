@@ -343,7 +343,7 @@ function runTests()
 
     composer install
 
-    vendor/bin/phpunit
+    vendor/bin/phpunit --coverage-clover=coverage.clover
 }
 
 ##
