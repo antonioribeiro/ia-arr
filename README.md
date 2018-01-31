@@ -16,7 +16,7 @@
 
 This package is an extraction of the [Laravel's Illuminate\Support\Arr](https://github.com/laravel/framework/blob/5.5/src/Illuminate/Support/Arr.php) class, including all helpers, repackaged to be agnostic and available to any PHP project. 
 
-It has its own namespace **(IlluminateAgnostic\Arr)**, so you can even use om Laravel apps without risking a namespace conflict.
+It has its own namespace **(IlluminateAgnostic\Arr)**, so you can use it even on Laravel apps without risking a namespace conflict.
 
 You can find some documentation on the available helpers here: https://laravel.com/docs/5.5/helpers.
 
