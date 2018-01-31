@@ -32,7 +32,7 @@ class ArrTest extends TestCase
         while ($old == $new && $count++ < 10) {
             $new = Arr::shuffle($new);
         }
-        
+
         $this->assertNotEquals($old, $new);
     }
 
