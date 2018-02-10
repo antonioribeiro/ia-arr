@@ -64,7 +64,9 @@ If you discover any security related issues, please email acr@antoniocarlosribei
 
 ## Credits
 
-- [Antonio Carlos Ribeiro](https://twitter.com/iantonioribeiro)
+- This package is an extraction of The Laravel Framework, created by [Taylor Otwell](https://twitter.com/taylorotwell)
+- Package creator [Antonio Carlos Ribeiro](https://twitter.com/iantonioribeiro)
+- [Contributors](https://github.com/antonioribeiro/ia-arr/graphs/contributors)
 
 ## License
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## v5.6.3 - 2018-02-10
+### Changed
+Paired with Laravel 5.6.3
+
 ## v0.3.0 - 2018-01-21
 ### Changed
 Upgrade script is now using Illuminate\Support\Collection directly.
