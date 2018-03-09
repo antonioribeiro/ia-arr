@@ -49,11 +49,11 @@ class Carbon extends BaseCarbon implements JsonSerializable
     /**
      * Create a new Carbon instance based on the given state array.
      *
-     * @param  array  $state
+     * @param  array  $array
      * @return static
      */
-    public static function __set_state(array $state)
+    public static function __set_state(array $array)
     {
-        return static::instance(parent::__set_state($state));
+        return static::instance(parent::__set_state($array));
     }
 }
