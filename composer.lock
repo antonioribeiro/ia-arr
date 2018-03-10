@@ -405,16 +405,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.24.0",
+            "version": "1.24.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "a05bed23de4c00040fe33cc6820c7e6be8d00c04"
+                "reference": "ef12cbd8ba5ce624f0a6a95e0850c4cc13e71e41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/a05bed23de4c00040fe33cc6820c7e6be8d00c04",
-                "reference": "a05bed23de4c00040fe33cc6820c7e6be8d00c04",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/ef12cbd8ba5ce624f0a6a95e0850c4cc13e71e41",
+                "reference": "ef12cbd8ba5ce624f0a6a95e0850c4cc13e71e41",
                 "shasum": ""
             },
             "require": {
@@ -454,7 +454,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2018-03-09T12:52:49+00:00"
+            "time": "2018-03-09T15:49:34+00:00"
         },
         {
             "name": "phar-io/manifest",
