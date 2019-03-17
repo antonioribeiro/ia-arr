@@ -12,7 +12,10 @@ class ArrTest extends TestCase
         $array = ['products' => ['desk' => ['price' => 100]]];
 
         Arr::set($array, 'products.desk.price', 200);
-        $this->assertEquals(['products' => ['desk' => ['price' => 200]]], $array);
+        $this->assertEquals(
+            ['products' => ['desk' => ['price' => 200]]],
+            $array
+        );
 
         Arr::set($array, null, 'new-value');
         $this->assertEquals('new-value', $array);
@@ -20,7 +23,10 @@ class ArrTest extends TestCase
         $array = ['products' => ['desk' => []]];
 
         Arr::set($array, 'products.desk.price.net', 300);
-        $this->assertEquals(['products' => ['desk' => ['price' => ['net' => 300]]]], $array);
+        $this->assertEquals(
+            ['products' => ['desk' => ['price' => ['net' => 300]]]],
+            $array
+        );
     }
 
     public function testShuffle()

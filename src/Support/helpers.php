@@ -5,7 +5,7 @@ use IlluminateAgnostic\Arr\Support\Collection;
 use IlluminateAgnostic\Arr\Support\Debug\Dumper;
 use Illuminate\Support\Collection as IlluminateCollection;
 
-if (! function_exists('array_add')) {
+if (!function_exists('array_add')) {
     /**
      * Add an element to an array using "dot" notation if it doesn't exist.
      *
@@ -20,7 +20,7 @@ if (! function_exists('array_add')) {
     }
 }
 
-if (! function_exists('array_collapse')) {
+if (!function_exists('array_collapse')) {
     /**
      * Collapse an array of arrays into a single array.
      *
@@ -33,7 +33,7 @@ if (! function_exists('array_collapse')) {
     }
 }
 
-if (! function_exists('array_divide')) {
+if (!function_exists('array_divide')) {
     /**
      * Divide an array into two arrays. One with keys and the other with values.
      *
@@ -46,7 +46,7 @@ if (! function_exists('array_divide')) {
     }
 }
 
-if (! function_exists('array_dot')) {
+if (!function_exists('array_dot')) {
     /**
      * Flatten a multi-dimensional associative array with dots.
      *
@@ -60,7 +60,7 @@ if (! function_exists('array_dot')) {
     }
 }
 
-if (! function_exists('array_except')) {
+if (!function_exists('array_except')) {
     /**
      * Get all of the given array except for a specified array of keys.
      *
@@ -74,7 +74,7 @@ if (! function_exists('array_except')) {
     }
 }
 
-if (! function_exists('array_first')) {
+if (!function_exists('array_first')) {
     /**
      * Return the first element in an array passing a given truth test.
      *
@@ -89,7 +89,7 @@ if (! function_exists('array_first')) {
     }
 }
 
-if (! function_exists('array_flatten')) {
+if (!function_exists('array_flatten')) {
     /**
      * Flatten a multi-dimensional array into a single level.
      *
@@ -103,7 +103,7 @@ if (! function_exists('array_flatten')) {
     }
 }
 
-if (! function_exists('array_forget')) {
+if (!function_exists('array_forget')) {
     /**
      * Remove one or many array items from a given array using "dot" notation.
      *
@@ -117,7 +117,7 @@ if (! function_exists('array_forget')) {
     }
 }
 
-if (! function_exists('array_get')) {
+if (!function_exists('array_get')) {
     /**
      * Get an item from an array using "dot" notation.
      *
@@ -132,7 +132,7 @@ if (! function_exists('array_get')) {
     }
 }
 
-if (! function_exists('array_has')) {
+if (!function_exists('array_has')) {
     /**
      * Check if an item or items exist in an array using "dot" notation.
      *
@@ -146,7 +146,7 @@ if (! function_exists('array_has')) {
     }
 }
 
-if (! function_exists('array_last')) {
+if (!function_exists('array_last')) {
     /**
      * Return the last element in an array passing a given truth test.
      *
@@ -161,7 +161,7 @@ if (! function_exists('array_last')) {
     }
 }
 
-if (! function_exists('array_only')) {
+if (!function_exists('array_only')) {
     /**
      * Get a subset of the items from the given array.
      *
@@ -175,7 +175,7 @@ if (! function_exists('array_only')) {
     }
 }
 
-if (! function_exists('array_pluck')) {
+if (!function_exists('array_pluck')) {
     /**
      * Pluck an array of values from an array.
      *
@@ -190,7 +190,7 @@ if (! function_exists('array_pluck')) {
     }
 }
 
-if (! function_exists('array_prepend')) {
+if (!function_exists('array_prepend')) {
     /**
      * Push an item onto the beginning of an array.
      *
@@ -205,7 +205,7 @@ if (! function_exists('array_prepend')) {
     }
 }
 
-if (! function_exists('array_pull')) {
+if (!function_exists('array_pull')) {
     /**
      * Get a value from the array, and remove it.
      *
@@ -220,7 +220,7 @@ if (! function_exists('array_pull')) {
     }
 }
 
-if (! function_exists('array_random')) {
+if (!function_exists('array_random')) {
     /**
      * Get a random value from an array.
      *
@@ -234,7 +234,7 @@ if (! function_exists('array_random')) {
     }
 }
 
-if (! function_exists('array_set')) {
+if (!function_exists('array_set')) {
     /**
      * Set an array item to a given value using "dot" notation.
      *
@@ -251,7 +251,7 @@ if (! function_exists('array_set')) {
     }
 }
 
-if (! function_exists('array_sort')) {
+if (!function_exists('array_sort')) {
     /**
      * Sort the array by the given callback or attribute name.
      *
@@ -265,7 +265,7 @@ if (! function_exists('array_sort')) {
     }
 }
 
-if (! function_exists('array_sort_recursive')) {
+if (!function_exists('array_sort_recursive')) {
     /**
      * Recursively sort an array by keys and values.
      *
@@ -278,7 +278,7 @@ if (! function_exists('array_sort_recursive')) {
     }
 }
 
-if (! function_exists('array_where')) {
+if (!function_exists('array_where')) {
     /**
      * Filter the array using the given callback.
      *
@@ -292,7 +292,7 @@ if (! function_exists('array_where')) {
     }
 }
 
-if (! function_exists('array_wrap')) {
+if (!function_exists('array_wrap')) {
     /**
      * If the given value is not an array, wrap it in one.
      *
@@ -305,7 +305,7 @@ if (! function_exists('array_wrap')) {
     }
 }
 
-if (! function_exists('collect')) {
+if (!function_exists('collect')) {
     /**
      * Create a collection from the given value.
      *
@@ -318,7 +318,7 @@ if (! function_exists('collect')) {
     }
 }
 
-if (! function_exists('data_fill')) {
+if (!function_exists('data_fill')) {
     /**
      * Fill in data where it's missing.
      *
@@ -333,7 +333,7 @@ if (! function_exists('data_fill')) {
     }
 }
 
-if (! function_exists('data_get')) {
+if (!function_exists('data_get')) {
     /**
      * Get an item from an array or object using "dot" notation.
      *
@@ -350,11 +350,11 @@ if (! function_exists('data_get')) {
 
         $key = is_array($key) ? $key : explode('.', $key);
 
-        while (! is_null($segment = array_shift($key))) {
+        while (!is_null($segment = array_shift($key))) {
             if ($segment === '*') {
                 if ($target instanceof Collection) {
                     $target = $target->all();
-                } elseif (! is_array($target)) {
+                } elseif (!is_array($target)) {
                     return value($default);
                 }
 
@@ -376,7 +376,7 @@ if (! function_exists('data_get')) {
     }
 }
 
-if (! function_exists('data_set')) {
+if (!function_exists('data_set')) {
     /**
      * Set an item on an array or object using dot notation.
      *
@@ -391,7 +391,7 @@ if (! function_exists('data_set')) {
         $segments = is_array($key) ? $key : explode('.', $key);
 
         if (($segment = array_shift($segments)) === '*') {
-            if (! Arr::accessible($target)) {
+            if (!Arr::accessible($target)) {
                 $target = [];
             }
 
@@ -406,22 +406,22 @@ if (! function_exists('data_set')) {
             }
         } elseif (Arr::accessible($target)) {
             if ($segments) {
-                if (! Arr::exists($target, $segment)) {
+                if (!Arr::exists($target, $segment)) {
                     $target[$segment] = [];
                 }
 
                 data_set($target[$segment], $segments, $value, $overwrite);
-            } elseif ($overwrite || ! Arr::exists($target, $segment)) {
+            } elseif ($overwrite || !Arr::exists($target, $segment)) {
                 $target[$segment] = $value;
             }
         } elseif (is_object($target)) {
             if ($segments) {
-                if (! isset($target->{$segment})) {
+                if (!isset($target->{$segment})) {
                     $target->{$segment} = [];
                 }
 
                 data_set($target->{$segment}, $segments, $value, $overwrite);
-            } elseif ($overwrite || ! isset($target->{$segment})) {
+            } elseif ($overwrite || !isset($target->{$segment})) {
                 $target->{$segment} = $value;
             }
         } else {
@@ -438,7 +438,7 @@ if (! function_exists('data_set')) {
     }
 }
 
-if (! function_exists('dd')) {
+if (!function_exists('dd')) {
     /**
      * Dump the passed variables and end the script.
      *
@@ -450,14 +450,14 @@ if (! function_exists('dd')) {
         http_response_code(500);
 
         foreach ($args as $x) {
-            (new Dumper)->dump($x);
+            (new Dumper())->dump($x);
         }
 
         die(1);
     }
 }
 
-if (! function_exists('value')) {
+if (!function_exists('value')) {
     /**
      * Return the default value of the given value.
      *
