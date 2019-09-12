@@ -1,11 +1,10 @@
 <?php
 
-use IlluminateAgnostic\Arr\Support\Arr;
-use IlluminateAgnostic\Arr\Support\Collection;
-use IlluminateAgnostic\Arr\Support\Debug\Dumper;
-use Illuminate\Support\Collection as IlluminateCollection;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Debug\Dumper;
 
-if (!class_exists(Illuminate\Support\Collection::class)) {
+if (!class_exists(Vanilla\Support\Collection::class)) {
     if (!function_exists('collect')) {
         /**
          * Create a collection from the given value.
