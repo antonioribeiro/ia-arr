@@ -9,6 +9,8 @@ $aliases = [
     Illuminate\Support\HtmlString::class => IlluminateAgnostic\Arr\Support\HtmlString::class,
     Illuminate\Support\Debug\Dumper::class => IlluminateAgnostic\Arr\Support\Debug\Dumper::class,
     Illuminate\Support\Debug\HtmlDumper::class => IlluminateAgnostic\Arr\Support\Debug\HtmlDumper::class,
+    Illuminate\Support\Enumerable::class => IlluminateAgnostic\Arr\Support\Enumerable::class,
+    Illuminate\Support\LazyCollection::class => IlluminateAgnostic\Arr\Support\LazyCollection::class,
 
 ];
 

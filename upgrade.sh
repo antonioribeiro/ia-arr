@@ -84,10 +84,13 @@ carriageReturn="
         'Support/HtmlString'
         'Support/Debug/Dumper'
         'Support/Debug/HtmlDumper'
+        'Support/Enumerable'
+        'Support/LazyCollection'
     )
 
     traits=(
         'Support/Traits/Macroable.php'
+        'Support/Traits/EnumeratesValues.php'
     )
 
     contracts=(
@@ -104,7 +107,6 @@ carriageReturn="
 
     stubs=(
         'src/Support/alias.php'
-        'src/Support/helpers.php'
         'tests/bootstrap.php'
         'tests/ArrTest.php'
     )
