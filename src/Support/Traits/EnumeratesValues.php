@@ -408,7 +408,7 @@ trait EnumeratesValues
      * @param  callable|null  $default
      * @return static|mixed
      */
-    public function when($value, callable $callback, callable $default = null)
+    public function when($value, callable $callback, ?callable $default = null)
     {
         if ($value) {
             return $callback($this, $value);
@@ -426,7 +426,7 @@ trait EnumeratesValues
      * @param  callable|null  $default
      * @return static|mixed
      */
-    public function whenEmpty(callable $callback, callable $default = null)
+    public function whenEmpty(callable $callback, ?callable $default = null)
     {
         return $this->when($this->isEmpty(), $callback, $default);
     }
@@ -438,7 +438,7 @@ trait EnumeratesValues
      * @param  callable|null  $default
      * @return static|mixed
      */
-    public function whenNotEmpty(callable $callback, callable $default = null)
+    public function whenNotEmpty(callable $callback, ?callable $default = null)
     {
         return $this->when($this->isNotEmpty(), $callback, $default);
     }
@@ -451,7 +451,7 @@ trait EnumeratesValues
      * @param  callable|null  $default
      * @return static|mixed
      */
-    public function unless($value, callable $callback, callable $default = null)
+    public function unless($value, callable $callback, ?callable $default = null)
     {
         return $this->when(! $value, $callback, $default);
     }
@@ -463,7 +463,7 @@ trait EnumeratesValues
      * @param  callable|null  $default
      * @return static|mixed
      */
-    public function unlessEmpty(callable $callback, callable $default = null)
+    public function unlessEmpty(callable $callback, ?callable $default = null)
     {
         return $this->whenNotEmpty($callback, $default);
     }
@@ -475,7 +475,7 @@ trait EnumeratesValues
      * @param  callable|null  $default
      * @return static|mixed
      */
-    public function unlessNotEmpty(callable $callback, callable $default = null)
+    public function unlessNotEmpty(callable $callback, ?callable $default = null)
     {
         return $this->whenEmpty($callback, $default);
     }
@@ -725,7 +725,7 @@ trait EnumeratesValues
      *
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return array_map(function ($value) {
             if ($value instanceof JsonSerializable) {

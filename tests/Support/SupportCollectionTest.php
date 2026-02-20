@@ -295,7 +295,7 @@ class SupportCollectionTest extends TestCase
      */
     public function testToJsonEncodesTheJsonSerializeResult($collection)
     {
-        $c = $this->getMockBuilder($collection)->setMethods(['jsonSerialize'])->getMock();
+        $c = $this->getMockBuilder($collection)->onlyMethods(['jsonSerialize'])->getMock();
         $c->expects($this->once())->method('jsonSerialize')->willReturn('foo');
         $results = $c->toJson();
         $this->assertJsonStringEqualsJsonString(json_encode('foo'), $results);
@@ -306,7 +306,7 @@ class SupportCollectionTest extends TestCase
      */
     public function testCastingToStringJsonEncodesTheToArrayResult($collection)
     {
-        $c = $this->getMockBuilder($collection)->setMethods(['jsonSerialize'])->getMock();
+        $c = $this->getMockBuilder($collection)->onlyMethods(['jsonSerialize'])->getMock();
         $c->expects($this->once())->method('jsonSerialize')->willReturn('foo');
 
         $this->assertJsonStringEqualsJsonString(json_encode('foo'), (string) $c);
@@ -4077,7 +4077,7 @@ class SupportCollectionTest extends TestCase
      *
      * @return array
      */
-    public function collectionClassProvider()
+    public static function collectionClassProvider()
     {
         return [
             [Collection::class],
@@ -4146,22 +4146,22 @@ class TestArrayAccessImplementation implements ArrayAccess
         $this->arr = $arr;
     }
 
-    public function offsetExists($offset)
+    public function offsetExists(mixed $offset): bool
     {
         return isset($this->arr[$offset]);
     }
 
-    public function offsetGet($offset)
+    public function offsetGet(mixed $offset): mixed
     {
         return $this->arr[$offset];
     }
 
-    public function offsetSet($offset, $value)
+    public function offsetSet(mixed $offset, mixed $value): void
     {
         $this->arr[$offset] = $value;
     }
 
-    public function offsetUnset($offset)
+    public function offsetUnset(mixed $offset): void
     {
         unset($this->arr[$offset]);
     }
@@ -4185,7 +4185,7 @@ class TestJsonableObject implements Jsonable
 
 class TestJsonSerializeObject implements JsonSerializable
 {
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ['foo' => 'bar'];
     }
@@ -4193,7 +4193,7 @@ class TestJsonSerializeObject implements JsonSerializable
 
 class TestJsonSerializeWithScalarValueObject implements JsonSerializable
 {
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return 'foo';
     }
